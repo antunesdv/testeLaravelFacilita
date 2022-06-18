@@ -26,6 +26,7 @@ Usar o commando 'Composer install no projeto'
 
 Configurar o .env com as configurações do banco
   Criar o banco com o nome 'teste_laravel' .env já configurado como default
+  
 Usar o comando 'php artisan migrate'
 
 ## ⚙️ Executando os testes
