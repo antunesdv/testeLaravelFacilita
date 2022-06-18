@@ -63,7 +63,7 @@ class UserController extends Controller
         if (!empty($results))
             //return redirect()->intended('/error');
             return redirect()->back()->with('error', 'E-mail já cadastado');
-        $results = DB::select("INSERT INTO `users`(`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES(null,'$nome','$email','$hoje ','$senha','0','$hoje ','$hoje ')");        
+        $results = DB::select("INSERT INTO `users`(`id`, `name`, `email`, `password`,`id_livro`,`statusAlocao`) VALUES(null,'$nome','$email','$senha',0,'Inativo')");        
         if (empty($results)) {
             return redirect()->back()->with('success', 'Usuário cadastrado com sucesso');
         } else {
