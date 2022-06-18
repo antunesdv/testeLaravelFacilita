@@ -19,11 +19,12 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();            
             $table->string('password');            
             $table->integer('id_livro');
-            $table->string('statusAlocao');                        
-            $table->string('email_verified_at');  
-            $table->string('remember_token');
-            $table->timestamps();
+            $table->string('statusAlocao');                                                            
         });
+        
+        DB::table('users')->insert([
+            ['name' => 'admin', 'email' => 'admin@gmail.com', 'password' => '0945fc9611f55fd0e183fb8b044f1afe', 'id_livro' => 0, 'statusAlocao' => 'Inativo'],
+        ]);
     }
 
     /**
