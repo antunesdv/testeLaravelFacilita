@@ -22,7 +22,7 @@ class Livros extends Migration
             $table->string('genero');  
             $table->date('dataRetirada')->nullable();
             $table->date('dataDevolucao')->nullable();  
-            $table->string('atrasado');  
+            $table->string('atrasado')->nullable();  
             $table->integer('users_id')->nullable();            
         });
     }
