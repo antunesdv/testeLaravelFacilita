@@ -21,8 +21,11 @@ xampp / algo similar para banco de dados
 Uma série de exemplos passo-a-passo que informam o que você deve executar para ter um ambiente de desenvolvimento em execução.
 
 Realizar o Git Clone do projeto
+
 Usar o commando 'Composer install no projeto'
+
 Configurar o .env com as configurações do banco
+  Criar o banco com o nome 'teste_laravel' .env já configurado como default
 Usar o comando 'php artisan migrate'
 
 ## ⚙️ Executando os testes
