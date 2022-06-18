@@ -20,10 +20,10 @@ class Livros extends Migration
             $table->integer('registro');
             $table->string('status');                        
             $table->string('genero');  
-            $table->date('dataRetirada');
-            $table->date('dataDevolucao');  
+            $table->date('dataRetirada')->nullable();
+            $table->date('dataDevolucao')->nullable();  
             $table->string('atrasado');  
-            $table->integer('users_id');            
+            $table->integer('users_id')->nullable();            
         });
     }
 
